@@ -85,11 +85,6 @@ portfolio/
 - Portfolio: [abhi963007.github.io/personal-portfolio](https://abhi963007.github.io/personal-portfolio)
 - Email: abhiramak963@gmail.com
 - LinkedIn: [Abhiram A K](https://www.linkedin.com/in/abhiram-a-k)
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 ---
 <div align="center">
   Made with ❤️ by Abhiram A K
