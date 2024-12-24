@@ -14,7 +14,7 @@ var audio=document.getElementById("audioPlayer"),loader=document.getElementById(
   resumeBtn.disabled = true;
 
   // Create blob URL for the PDF
-  fetch('Abhiram_A_K_CV.pdf')
+  fetch('src/pdf/Abhiram_A_K_CV.pdf')
     .then(response => {
       if (!response.ok) throw new Error('Download failed');
       return response.blob();
