@@ -3,7 +3,10 @@ var audio=document.getElementById("audioPlayer"),loader=document.getElementById(
   const originalText = resumeBtn.innerHTML;
   const pdfPath = './src/pdf/Abhiram_A_K_CV.pdf';
   
-  // Show loading state
+  // Direct download using window.location
+  window.location.href = pdfPath;
+  
+  // Show loading state briefly
   resumeBtn.innerHTML = `
     <div class="sign">
       <svg viewBox="0 0 640 512">
@@ -14,46 +17,9 @@ var audio=document.getElementById("audioPlayer"),loader=document.getElementById(
   `;
   resumeBtn.disabled = true;
 
-  // Create blob URL for the PDF
-  fetch(pdfPath)
-    .then(response => {
-      if (!response.ok) {
-        throw new Error(`Download failed: ${response.status} ${response.statusText}`);
-      }
-      return response.blob();
-    })
-    .then(blob => {
-      const url = window.URL.createObjectURL(blob);
-      const link = document.createElement('a');
-      link.href = url;
-      link.download = 'Abhiram_A_K_CV.pdf';
-      document.body.appendChild(link);
-      link.click();
-      window.URL.revokeObjectURL(url);
-      document.body.removeChild(link);
-      
-      // Reset button state after successful download
-      setTimeout(() => {
-        resumeBtn.innerHTML = originalText;
-        resumeBtn.disabled = false;
-      }, 1000);
-    })
-    .catch(error => {
-      console.error('Download error:', error);
-      // Reset button and show error state
-      resumeBtn.innerHTML = `
-        <div class="sign">
-          <svg viewBox="0 0 640 512">
-            <path d="M144 480C64.5 480 0 415.5 0 336c0-62.8 40.2-116.2 96.2-135.9c-.1-2.7-.2-5.4-.2-8.1c0-88.4 71.6-160 160-160c59.3 0 111 32.2 138.7 80.2C409.9 102 428.3 96 448 96c53 0 96 43 96 96c0 12.2-2.3 23.8-6.4 34.6C596 238.4 640 290.1 640 352c0 70.7-57.3 128-128 128H144z"/>
-          </svg>
-        </div>
-        <span>Try Again</span>
-      `;
-      resumeBtn.disabled = false;
-      
-      // Reset to original state after error
-      setTimeout(() => {
-        resumeBtn.innerHTML = originalText;
-      }, 2000);
-    });
+  // Reset button state after a brief delay
+  setTimeout(() => {
+    resumeBtn.innerHTML = originalText;
+    resumeBtn.disabled = false;
+  }, 1000);
 }
