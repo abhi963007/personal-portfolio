@@ -2050,3 +2050,24 @@ footer {
         margin-top: 100px;  
     }
 }
+
+/* Add styling for project card images */
+.project-image {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: #1a1c28;
+}
+
+.project-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.project-card:hover .project-image img {
+  transform: scale(1.05);
+}
