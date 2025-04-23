@@ -367,6 +367,7 @@
         <button class="filter-btn" data-filter="web">Web Development</button>
         <button class="filter-btn" data-filter="python">Python</button>
         <button class="filter-btn" data-filter="frontend">Frontend</button>
+        <button class="filter-btn" data-filter="react">React</button>
       </div>
 
       <div class="projects-grid">
@@ -652,6 +653,28 @@
       const filterButtons = document.querySelectorAll('.filter-btn');
       const projectCards = document.querySelectorAll('.project-card');
       
+      // Function to filter projects with animation
+      function filterProjects(filter) {
+        projectCards.forEach(card => {
+          const categories = card.getAttribute('data-category');
+          
+          if (filter === 'all' || (categories && categories.includes(filter))) {
+            // Show the card with a fade-in effect
+            card.style.opacity = '0';
+            card.style.display = 'block';
+            setTimeout(() => {
+              card.style.opacity = '1';
+            }, 50);
+          } else {
+            // Hide the card with a fade-out effect
+            card.style.opacity = '0';
+            setTimeout(() => {
+              card.style.display = 'none';
+            }, 300);
+          }
+        });
+      }
+      
       filterButtons.forEach(button => {
         button.addEventListener('click', function() {
           // Remove active class from all buttons
@@ -660,22 +683,45 @@
           // Add active class to clicked button
           this.classList.add('active');
           
+          // Get filter value and apply filtering
           const filter = this.getAttribute('data-filter');
-          
-          projectCards.forEach(card => {
-            if (filter === 'all') {
-              card.style.display = 'block';
-            } else {
-              const categories = card.getAttribute('data-category');
-              if (categories && categories.includes(filter)) {
-                card.style.display = 'block';
-              } else {
-                card.style.display = 'none';
-              }
-            }
-          });
+          filterProjects(filter);
         });
       });
+      
+      // Add CSS for smooth transitions
+      projectCards.forEach(card => {
+        card.style.transition = 'opacity 0.3s ease';
+      });
+      
+      // Initialize counter for visible projects
+      updateProjectCount();
+      
+      // Update count when filter changes
+      filterButtons.forEach(button => {
+        button.addEventListener('click', function() {
+          updateProjectCount();
+        });
+      });
+      
+      // Function to update project count
+      function updateProjectCount() {
+        setTimeout(() => {
+          const activeFilter = document.querySelector('.filter-btn.active').getAttribute('data-filter');
+          let visibleCount = 0;
+          
+          projectCards.forEach(card => {
+            const categories = card.getAttribute('data-category');
+            if (activeFilter === 'all' || (categories && categories.includes(activeFilter))) {
+              visibleCount++;
+            }
+          });
+          
+          const countDisplay = document.querySelector('.page-heading p');
+          const filterName = activeFilter === 'all' ? 'all categories' : `the "${activeFilter}" category`;
+          countDisplay.textContent = `Showing ${visibleCount} projects from ${filterName}. Each project represents different skills and technologies I've worked with.`;
+        }, 350);
+      }
     });
   </script>
   
@@ -685,6 +731,7 @@
     AOS.init({
       duration: 800,
       offset: 100,
+      once: true
     });
   </script>
 </body>
