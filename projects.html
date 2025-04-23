@@ -1277,7 +1277,7 @@
               </div>
             </div>
             <p class="project-duration">Jan 2025 - Feb 2025</p>
-            <p class="project-description">A modern, responsive portfolio showcasing personal skills, projects, and experience with clean design and smooth animations.</p>
+            <p class="project-description">A feature-rich e-commerce platform built with MERN stack, featuring user authentication, product management, shopping cart, and secure payment integration.</p>
           </div>
         </div>
 
@@ -1697,63 +1697,66 @@
               </div>
             </div>
             <p class="project-duration">Jan 2025 - Feb 2025</p>
-            <p class="project-description">A modern, responsive portfolio showcasing personal skills, projects, and experience with clean design and smooth animations.</p>
+            <p class="project-description">A feature-rich e-commerce platform built with MERN stack, featuring user authentication, product management, shopping cart, and secure payment integration.</p>
           </div>
         </div>
+      </div>
+    </div>
+  </main>
 
-          // Add active class to clicked button
-          this.classList.add('active');
-          
-          // Get filter value and apply filtering
-          const filter = this.getAttribute('data-filter');
-          filterProjects(filter);
-        });
-      });
-      
-      // Add CSS for smooth transitions
-      projectCards.forEach(card => {
-        card.style.transition = 'opacity 0.3s ease';
-      });
-      
-      // Initialize counter for visible projects
-      updateProjectCount();
-      
-      // Update count when filter changes
-      filterButtons.forEach(button => {
-        button.addEventListener('click', function() {
-          updateProjectCount();
-        });
-      });
-      
-      // Function to update project count
-      function updateProjectCount() {
-        setTimeout(() => {
-          const activeFilter = document.querySelector('.filter-btn.active').getAttribute('data-filter');
-          let visibleCount = 0;
-          
-          projectCards.forEach(card => {
-            const categories = card.getAttribute('data-category');
-            if (activeFilter === 'all' || (categories && categories.includes(activeFilter))) {
-              visibleCount++;
-            }
-          });
-          
-          const countDisplay = document.querySelector('.page-heading p');
-          const filterName = activeFilter === 'all' ? 'all categories' : `the "${activeFilter}" category`;
-          countDisplay.textContent = `Showing ${visibleCount} projects from ${filterName}. Each project represents different skills and technologies I've worked with.`;
-        }, 350);
-      }
-    });
-  </script>
-  
-  <!-- AOS (Animate on Scroll) -->
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
-    AOS.init({
-      duration: 800,
-      offset: 100,
-      once: true
+    // Add active class to clicked button
+    this.classList.add('active');
+    
+    // Get filter value and apply filtering
+    const filter = this.getAttribute('data-filter');
+    filterProjects(filter);
+  });
+
+  // Add CSS for smooth transitions
+  projectCards.forEach(card => {
+    card.style.transition = 'opacity 0.3s ease';
+  });
+  
+  // Initialize counter for visible projects
+  updateProjectCount();
+  
+  // Update count when filter changes
+  filterButtons.forEach(button => {
+    button.addEventListener('click', function() {
+      updateProjectCount();
     });
-  </script>
+  });
+  
+  // Function to update project count
+  function updateProjectCount() {
+    setTimeout(() => {
+      const activeFilter = document.querySelector('.filter-btn.active').getAttribute('data-filter');
+      let visibleCount = 0;
+      
+      projectCards.forEach(card => {
+        const categories = card.getAttribute('data-category');
+        if (activeFilter === 'all' || (categories && categories.includes(activeFilter))) {
+          visibleCount++;
+        }
+      });
+      
+      const countDisplay = document.querySelector('.page-heading p');
+      const filterName = activeFilter === 'all' ? 'all categories' : `the "${activeFilter}" category`;
+      countDisplay.textContent = `Showing ${visibleCount} projects from ${filterName}. Each project represents different skills and technologies I've worked with.`;
+    }, 350);
+  }
+</script>
+
+<!-- AOS (Animate on Scroll) -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 800,
+    offset: 100,
+    once: true
+  });
+</script>
 </body>
 </html> 
+
