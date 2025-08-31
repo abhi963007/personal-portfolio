@@ -4,17 +4,17 @@
   <img src="https://img.shields.io/badge/Portfolio-Abhiram%20A%20K-0366d6?style=for-the-badge"/>
   <img src="https://img.shields.io/badge/Status-Active-2ea44f?style=for-the-badge"/>
   <img src="https://img.shields.io/badge/License-MIT-red?style=for-the-badge"/>
-  <img src="https://img.shields.io/badge/Last%20Updated-April%202025-blue?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Last%20Updated-January%202025-blue?style=for-the-badge"/>
 </p>
 
-A modern, responsive personal portfolio website showcasing my skills, projects, and professional experience as a developer. Built with performance and accessibility in mind to create an engaging user experience.
+A modern, responsive personal portfolio website showcasing my skills, projects, and professional experience as a Full-Stack Python Developer. Currently working at Quest Innovative Solutions on Django and Generative AI projects. Built with performance and accessibility in mind to create an engaging user experience.
 
 <p align="center">
   <a href="https://abhi963007.github.io/personal-portfolio/" target="_blank"><strong>✨ View Live Demo</strong></a>
 </p>
 
 <p align="center">
-  <img src="https://placehold.co/800x400?text=Portfolio+Preview&font=montserrat" alt="Portfolio Preview" width="100%"/>
+  <img src="src/png/Preview-card-min.png" alt="Portfolio Preview" width="100%"/>
 </p>
 
 ## 📋 Overview
@@ -25,56 +25,44 @@ This portfolio is designed to present my work and skills in a clean, professiona
 
 - **Responsive Design**: Fully optimized for all device sizes from mobile to desktop
 - **Dark/Light Mode**: Toggle between visual themes for comfortable viewing
-- **Project Showcase**: Filterable gallery of projects with detailed descriptions
-- **Performance Optimized**: Fast loading times with optimized assets
-- **Interactive UI**: Smooth animations and transitions for enhanced user experience
-- **Accessibility Compliant**: Following WCAG guidelines for inclusive design
-- **SEO Ready**: Properly structured for search engine visibility
-- **Contact Form**: Easy-to-use form for visitor inquiries
-- **Skills Visualization**: Interactive display of technical competencies
-- **Blog Integration**: Showcasing thoughts and technical articles
-- **Resume Download**: One-click access to professional resume
+- **Project Showcase**: Gallery of projects with detailed descriptions and GitHub links
+- **Internship Timeline**: Professional experience including current role at Quest Innovative Solutions
+- **Performance Optimized**: Fast loading times with optimized assets and CDN dependencies
+- **Interactive UI**: Smooth animations and transitions using AOS library for enhanced UX
+- **Skills Visualization**: Interactive display of technical competencies with modern icons
+- **Resume Download**: One-click access to professional resume PDF
+- **Social Media Integration**: Direct links to GitHub, LinkedIn, Instagram, and email
+- **Audio Controls**: Background music with toggle functionality
+- **SEO Optimized**: Proper meta tags, sitemap, and robots.txt for search visibility
 
 ## 🛠️ Tech Stack
 
-- HTML5 & CSS3
-- JavaScript (Vanilla)
-- CSS Variables for theming
-- CSS Grid & Flexbox
-- Lazy loading for images
-- GitHub Pages for hosting
-- Intersection Observer API
-- LocalStorage for preferences
-- Service Worker for offline capability
-- Web Animations API
-- Form validation with constraint validation API
+- **Frontend**: HTML5, CSS3, Vanilla JavaScript
+- **Styling**: CSS Grid, Flexbox, CSS Variables for theming
+- **Animations**: AOS (Animate On Scroll) library
+- **Icons**: DevIcons CDN for technology logos
+- **Hosting**: GitHub Pages
+- **Version Control**: Git & GitHub
+- **Performance**: Optimized assets, responsive images
+- **SEO**: Meta tags, Open Graph, sitemap.xml, robots.txt
 
 ## 📁 Project Structure
 
 ```
-portfolio/
-├── index.html            # Main landing page
-├── projects.html         # Projects showcase page
-├── blog.html             # Blog articles page
-├── contact.html          # Contact form page
-├── about.html            # About me page
-├── css/                  # Stylesheets
-│   ├── style.css         # Core styles
-│   ├── dark-mode.css     # Dark mode specific styles
-│   └── animations.css    # Animation definitions
-├── js/                   # JavaScript files
-│   ├── main.js           # Core functionality
-│   ├── projects.js       # Project filtering logic
-│   ├── theme-toggle.js   # Dark/light mode switcher
-│   └── form-handler.js   # Contact form validation
-├── assets/               # Source assets
-│   ├── images/           # Image assets
-│   ├── webp/             # WebP format images
-│   ├── icons/            # SVG icons
-│   ├── fonts/            # Web fonts
-│   └── audio/            # Audio files
-├── sw.js                 # Service worker for offline support
-├── manifest.json         # PWA manifest
+personal-portfolio/
+├── index.html            # Main landing page with all sections
+├── projects.html         # Dedicated projects showcase page
+├── style.css             # Core styles and responsive design
+├── main.js               # Core JavaScript functionality
+├── src/                  # Source assets
+│   ├── png/              # Image assets and logos
+│   ├── ico/              # Favicon files
+│   ├── mp3/              # Audio files (preloader music)
+│   └── pdf/              # Resume PDF file
+├── CNAME                 # GitHub Pages custom domain
+├── sitemap.xml           # SEO sitemap
+├── robots.txt            # Search engine directives
+├── LICENSE               # MIT license
 └── README.md             # Project documentation
 ```
 
@@ -93,32 +81,34 @@ portfolio/
 3. Open `index.html` in your browser or use a local server:
    ```bash
    # Using Python 3
-   python -m http.server
+   python -m http.server 8000
    
    # Using Node.js
-   npx serve
+   npx serve .
    
    # Using VS Code Live Server extension
    # Right-click on index.html and select "Open with Live Server"
    ```
 
-4. Make changes to the HTML, CSS, or JavaScript files as needed.
+4. The portfolio will be available at `http://localhost:8000`
 
-5. Test responsiveness using browser developer tools.
+5. Make changes to the HTML, CSS, or JavaScript files as needed.
+
+6. Test responsiveness using browser developer tools.
 
 ## 🎨 Customization
 
 The portfolio is designed to be easily customizable:
 
-- Edit `index.html` to change content and structure
-- Modify CSS files in the `css/` directory to adjust the visual appearance
+- Edit `index.html` to update personal information, skills, and experience
+- Modify `style.css` to adjust visual appearance and themes
 - Update projects in `projects.html` to showcase your work
 - Adjust theme colors using CSS variables in the `:root` selector
-- Replace images in the `assets/images/` directory with your own
-- Update social media links in the footer
-- Modify the contact form in `contact.html`
-- Customize animations in `animations.css`
-- Add your own blog posts to `blog.html`
+- Replace images in the `src/png/` directory with your own
+- Update social media links in the footer section
+- Modify the internship timeline to reflect your experience
+- Add your resume PDF to `src/pdf/` directory
+- Update meta tags and SEO information
 
 ## 🚀 Deployment
 
@@ -174,10 +164,9 @@ The site uses progressive enhancement to ensure basic functionality on older bro
 
 - **Portfolio**: [abhi963007.github.io/personal-portfolio](https://abhi963007.github.io/personal-portfolio)
 - **Email**: abhiramak963@gmail.com
-- **LinkedIn**: [Abhiram A K](https://www.linkedin.com/in/abhiram-a-k)
+- **LinkedIn**: [Abhiram A K](https://www.linkedin.com/in/abhiram-a-k-16208a174/)
 - **GitHub**: [abhi963007](https://github.com/abhi963007)
-- **Twitter**: [@abhiramak963](https://twitter.com/abhiramak963)
-- **Dev.to**: [abhi963007](https://dev.to/abhi963007)
+- **Instagram**: [@abhi9632024143](https://www.instagram.com/abhi9632024143/)
 
 ## 📝 Accessibility
 
@@ -192,35 +181,23 @@ This portfolio follows WCAG 2.1 AA standards for accessibility:
 - Focus indicators for interactive elements
 - Responsive design for various devices
 
-## 🔄 Continuous Improvement
+## 👨‍💻 About Me
 
-This portfolio is continuously being improved. Upcoming features include:
+I'm Abhiram A K, an MCA student at Mangalam College of Engineering with a passion for Full-Stack Development. Currently working as a Full-Stack Python Developer at Quest Innovative Solutions, focusing on Django development and Generative AI integration.
 
-- [ ] Internationalization support
-- [ ] Advanced animation effects
-- [ ] Integration with headless CMS for blog
-- [ ] Improved analytics tracking
-- [ ] Enhanced project filtering
-- [ ] Testimonials section
+### Current Role
+- **Position**: Full-Stack Python Developer
+- **Company**: Quest Innovative Solutions Pvt Ltd
+- **Duration**: July 2024 - January 2025 (Current)
+- **Focus**: Django development with Generative AI integration
 
-## 📊 Analytics
+### Previous Experience
+- **PHP Developer** at HASHCOVET (June 2023 - August 2023)
+- Gained experience in web development, mobile applications, and digital marketing
 
-This site uses privacy-friendly analytics to track user engagement:
-
-- Page views and unique visitors
-- User flow through the site
-- Interaction with project cards
-- Form submissions
-- Download events
-
-## 📱 PWA Support
-
-The portfolio functions as a Progressive Web App:
-
-- Installable on mobile devices
-- Works offline with cached content
-- App-like experience on supported devices
-- Fast loading even on slow connections
+### Education
+- **MCA** - Mangalam College of Engineering, Ettumanoor (Expected: March 2025)
+- **BSc Physics** - St. Thomas College, Pala (March 2022)
 
 ## 🔒 License
 
