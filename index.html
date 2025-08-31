@@ -1,0 +1,1563 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- don't forget to remove this >>>>(google tag manager) script, if you are using this page/code -->
+  <!-- don't forget to remove this >>>>(google tag manager) script, if you are using this page/code -->
+  <!-- don't forget to remove this >>>>(google tag manager) script, if you are using this page/code -->
+  <!-- don't forget to remove this >>>>(google tag manager) script, if you are using this page/code -->
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YMWDE0VTD3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-YMWDE0VTD3");
+  </script>
+  <!-- don't forget to remove this >>(google site verification meta tag) tag, if you are using this page/code -->
+  <!-- don't forget to remove this >>(google site verification meta tag) tag, if you are using this page/code -->
+  <!-- don't forget to remove this >>(google site verification meta tag) tag, if you are using this page/code -->
+
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#000" />
+  <meta name="description"
+    content="Abhiram A K | Portfolio, A passionate MCA student with expertise in Full Stack Development, Python, and Web Technologies." />
+  <meta name="keywords"
+    content="abhiram ak,abhiram ak portfolio,Abhiram A K Portfolio,abhiramak,abhiram ak site,Abhiram A K Site,abhiram ak me,abhiram ak web,abhiram ak github,abhiramak site,full stack developer,python developer,web developer,abhiram ak kerala,abhiram pala" />
+  <meta name="author" content="Abhiram A K" />
+  <meta property="og:image" content="https://abhi963007.github.io/personal-portfolio/src/png/Preview-card-min.png" />
+  <meta property="og:title" content="Abhiram A K | Portfolio" />
+  <meta property="og:description"
+    content="Hi! My name is Abhiram. I'm a Full Stack Developer and MCA student. Visit and know about me & my projects. I value continuous learning, clean code, and innovative solutions." />
+
+  <meta property="og:url" content="https://abhi963007.github.io/personal-portfolio" />
+  <meta property="og:site_name" content="Abhiram A K Portfolio" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@abhiramak963" />
+  <meta name="twitter:title" content="Abhiram A K | Portfolio" />
+  <meta name="twitter:description"
+    content="Hi! My name is Abhiram. I'm a Full Stack Developer and MCA student. Visit and know about me & my projects. I value continuous learning, clean code, and innovative solutions." />
+  <meta name="twitter:image" content="https://abhi963007.github.io/personal-portfolio/src/png/Preview-card-min.png" />
+  <title>Abhiram A K | Portfolio</title>
+  <link rel="icon" type="image/x-icon" href="src/png/main-favicon.png" />
+  <!-- aos cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+  <!-- stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+  <!-- google fonts-->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Passions+Conflict&family=Orbitron&family=Fira+Code&family=Six+Caps" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <!-- Add these new Google Font imports -->
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap"
+    rel="stylesheet">
+
+  <style>
+    .projects-section-container {
+      min-height: 100vh;
+      width: 100%;
+      padding: 6rem 0;
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1));
+    }
+
+    .projects-section {
+      width: 90%;
+      margin: 0 auto;
+      max-width: 1200px;
+    }
+
+    .projects-showcase {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: 2.5rem;
+      padding: 3rem 0;
+    }
+
+    .project-card {
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 15px;
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      font-family: 'DM Sans', sans-serif;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    }
+
+    .project-image {
+      height: 200px;
+      position: relative;
+      overflow: hidden;
+      background-color: #2a2a2a;
+      /* Fallback color */
+    }
+
+    .project-image::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      background-position: center;
+      transition: transform 0.3s ease;
+    }
+
+    /* Add specific background images for each project */
+    .project-card:nth-child(1) .project-image::before {
+      background-image: url('https://images.unsplash.com/photo-1587620962725-abab7fe55159?w=800');
+    }
+
+    .project-card:nth-child(2) .project-image::before {
+      background-image: url('https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=800');
+    }
+
+    .project-card:nth-child(3) .project-image::before {
+      background-image: url('https://images.unsplash.com/photo-1532712938310-34cb3982ef74?w=800');
+    }
+
+    /* Add hover effect */
+    .project-card:hover .project-image::before {
+      transform: scale(1.1);
+    }
+
+    .project-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.7);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      z-index: 1;
+    }
+
+    .project-card:hover .project-overlay {
+      opacity: 1;
+    }
+
+    .tech-stack {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 1rem;
+    }
+
+    .tech-stack span {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 0.4rem 1rem;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      color: #fff;
+      backdrop-filter: blur(5px);
+      font-family: 'Space Grotesk', sans-serif;
+      font-weight: 500;
+      letter-spacing: 0.02em;
+    }
+
+    .project-info {
+      padding: 1.5rem;
+    }
+
+    .project-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 1rem;
+    }
+
+    .project-header h3 {
+      color: #fff;
+      font-size: 1.3rem;
+      margin: 0;
+      flex: 1;
+      margin-right: 1rem;
+      font-family: 'Space Grotesk', sans-serif;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+    }
+
+    .project-links {
+      display: flex;
+      gap: 1rem;
+    }
+
+    .project-link {
+      color: #fff;
+      opacity: 0.7;
+      transition: opacity 0.3s ease;
+    }
+
+    .project-link:hover {
+      opacity: 1;
+    }
+
+    .project-duration {
+      color: #888;
+      font-size: 0.9rem;
+      margin-bottom: 1rem;
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 400;
+    }
+
+    .project-description {
+      color: #ccc;
+      font-size: 0.95rem;
+      line-height: 1.6;
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 300;
+    }
+
+    @media (max-width: 768px) {
+      .projects-showcase {
+        grid-template-columns: 1fr;
+      }
+
+      .project-card {
+        max-width: 100%;
+      }
+    }
+
+    .about-section {
+      font-family: 'Space Grotesk', sans-serif;
+      padding: 4rem 0;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .about-info {
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 15px;
+      padding: 3rem;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+      backdrop-filter: blur(10px);
+    }
+
+    .about-header {
+      margin-bottom: 3rem;
+      position: relative;
+    }
+
+    .about-header::after {
+      content: '';
+      position: absolute;
+      bottom: -10px;
+      left: 0;
+      width: 60px;
+      height: 4px;
+      background: linear-gradient(90deg, #794bc4, rgba(121, 75, 196, 0.3));
+      border-radius: 2px;
+    }
+
+    .about-content {
+      display: grid;
+      gap: 2.5rem;
+    }
+
+    .about-paragraph {
+      color: rgba(255, 255, 255, 0.9);
+      font-size: 1.1rem;
+      line-height: 1.8;
+      font-family: 'DM Sans', sans-serif;
+      position: relative;
+      padding-left: 1.5rem;
+      border-left: 2px solid rgba(121, 75, 196, 0.3);
+    }
+
+    .highlight {
+      color: #794bc4;
+      font-weight: 500;
+    }
+
+    .resume-btn {
+      margin-top: 3rem;
+      width: 45px;
+      /* Start with just enough width for the icon */
+      height: 45px;
+      padding: 0.8rem;
+      background: transparent;
+      border: 2px solid #794bc4;
+      color: #794bc4;
+      border-radius: 50%;
+      /* Make it circular */
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1rem;
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .resume-btn:hover {
+      width: 180px;
+      /* Expand width on hover */
+      border-radius: 8px;
+      /* Change to rounded rectangle */
+      background: rgba(121, 75, 196, 0.1);
+      transform: translateY(-2px);
+      box-shadow: 0 5px 15px rgba(121, 75, 196, 0.2);
+    }
+
+    .resume-btn .sign {
+      width: 20px;
+      height: 20px;
+      min-width: 20px;
+      /* Prevent icon from shrinking */
+      transition: transform 0.3s ease;
+    }
+
+    .resume-btn .sign svg {
+      fill: #794bc4;
+    }
+
+    .resume-btn span {
+      opacity: 0;
+      width: 0;
+      overflow: hidden;
+      white-space: nowrap;
+      margin-left: 0;
+      transition: all 0.3s ease;
+    }
+
+    .resume-btn:hover span {
+      opacity: 1;
+      width: auto;
+      margin-left: 8px;
+    }
+
+    @media (max-width: 768px) {
+      .about-info {
+        padding: 2rem;
+      }
+
+      .about-paragraph {
+        font-size: 1rem;
+      }
+    }
+
+    .section-heading-article {
+      font-family: 'Space Grotesk', sans-serif;
+      font-weight: 700;
+      letter-spacing: -0.03em;
+      font-size: 2.5rem;
+      margin-bottom: 2.5rem;
+      background: linear-gradient(to right, #fff, rgba(255, 255, 255, 0.8));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .info-dp-section {
+      display: flex;
+      align-items: flex-start;
+      margin-top: 2rem;
+    }
+
+    .about-info {
+      flex: 1;
+    }
+
+    @media (max-width: 768px) {
+      .info-dp-section {
+        flex-direction: column;
+        gap: 2rem;
+      }
+    }
+  </style>
+</head>
+
+<body class="body">
+  <audio loop="" id="audioPlayer" style="display: none">
+    <source src="src/mp3/preloader.mp3" type="audio/mp3" />
+  </audio>
+  <div id="preloader"></div>
+  <noscript>Allow Javascript</noscript>
+
+  <header>
+    <div class="cursor-inner" id="cursor-inner"></div>
+    <div class="cursor-outer" id="cursor-outer"></div>
+
+    <div class="navbar" id="navbar">
+      <div class="hey">Hey!</div>
+      <div class="logo" tabindex="0" aria-label="abhiram ak logo">
+        <div class="logo-top">
+          <img src="src/png/nav-avatar.png" alt="animation-head" id="nav-avatar" />
+        </div>
+      </div>
+      <div class="navbar-tabs" id="navbar-tabs">
+        <ul class="navbar-tabs-ul">
+          <li class="home activeThistab" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="100">
+            <a href="#home" tabindex="0" aria-label="Home menu button">
+              &#60;/Home&#62;
+            </a>
+          </li>
+
+          <li class="about" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="300">
+            <a href="#about" aria-label="about menu button">
+              &#60;/AboutMe&#62;
+            </a>
+          </li>
+
+          <li class="internships" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="400">
+            <a href="#internships" aria-label="internships menu button">
+              &#60;/Internships&#62;
+            </a>
+          </li>
+
+          <li class="skills" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="600">
+            <a href="#skills" aria-label="skills menu button">
+              &#60;/Skills&#62;
+            </a>
+          </li>
+
+          <li class="projects" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="800">
+            <a href="#projects" aria-label="projects menu button">
+              &#60;/Projects&#62;
+            </a>
+          </li>
+
+          <li class="certifications" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="1000">
+            <a href="#certifications" aria-label="certifications menu button">
+              &#60;/Certifications&#62;
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- navbar tabs ends -->
+    </div>
+  </header>
+  <!-- header ends here -->
+
+  <main>
+    <!-- hamburger -->
+    <div class="hamburger" id="hamburger" data-aos="fade">
+      <div class="hamburgerbase">
+        <button id="hamburger-button" onclick="hamburgerMenu()" tabindex="0" aria-label="Menu Button">
+          <span class="burger-bar" id="burger-bar1"></span>
+          <span class="burger-bar" id="burger-bar2"></span>
+          <span class="burger-bar" id="burger-bar3"></span>
+        </button>
+      </div>
+    </div>
+    <!-- hamburger -->
+    <div class="mobiletogglemenu" id="mobiletogglemenu">
+      <ul class="mobile-navbar-tabs-ul" id="mobile-ul">
+        <li id="home-mobile-tab" class="mobile-navbar-tabs-li home activeThismobiletab" onclick="hidemenubyli()">
+          <a href="#home" tabindex="0" aria-label="Home menu button">
+            &#60;/Home&#62;
+          </a>
+        </li>
+
+        <li id="aboutme-mobile-tab" class="mobile-navbar-tabs-li about" onclick="hidemenubyli()">
+          <a href="#about" tabindex="0" aria-label="about menu button">
+            &#60;/AboutMe&#62;
+          </a>
+        </li>
+        <li id="internships-mobile-tab" class="mobile-navbar-tabs-li internships" onclick="hidemenubyli()">
+          <a href="#internships" tabindex="0" aria-label="internships menu button">
+            &#60;/Internships&#62;
+          </a>
+        </li>
+
+        <li id="skills-mobile-tab" class="mobile-navbar-tabs-li skills" onclick="hidemenubyli()">
+          <a href="#skills" tabindex="0" aria-label="skills menu button">
+            &#60;/Skills&#62;
+          </a>
+        </li>
+
+        <li id="projects-mobile-tab" class="mobile-navbar-tabs-li projects" onclick="hidemenubyli()">
+          <a href="#projects" tabindex="0" aria-label="projects menu button">
+            &#60;/Projects&#62;
+          </a>
+        </li>
+
+        <li id="certifications-mobile-tab" class="mobile-navbar-tabs-li certifications" onclick="hidemenubyli()">
+          <a href="#certifications" tabindex="0" aria-label="certifications menu button">
+            &#60;/Certifications&#62;
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- mobile toggle menu ends -->
+
+    <section class="landing-page-container" id="home">
+      <div class="blob"></div>
+
+      <div class="text-content">
+        <article id="hello-friend" data-aos="fade-up" data-aos-delay="0">
+          <p class="jello">H</p>
+          <p class="jello">e</p>
+          <p class="jello">l</p>
+          <p class="jello">l</p>
+          <p class="jello">o</p>
+          <p class="jello">(</p>
+          <p class="jello">)</p>
+          <p class="jello">;</p>
+          &nbsp;
+          <p class="jello">I</p>
+          <p class="jello">'</p>
+          <p class="jello">m</p>
+        </article>
+        <article id="name" data-aos="fade-up" data-aos-delay="200">
+          <p class="jello">A</p>
+          <p class="jello">b</p>
+          <p class="jello">h</p>
+          <p class="jello">i</p>
+          <p class="jello">r</p>
+          <p class="jello">a</p>
+          <p class="jello">m</p>
+          &nbsp;
+          <p class="jello">A</p>
+          &nbsp;
+          <p class="jello">K</p>
+          <p class="jello">.</p>
+        </article>
+
+        <article id="work" data-aos="fade-up" data-aos-delay="400">
+          <div>
+            <p class="jello">I</p>
+          </div>
+          <div>
+            <p class="jello">d</p>
+            <p class="jello">e</p>
+            <p class="jello">v</p>
+            <p class="jello">e</p>
+            <p class="jello">l</p>
+            <p class="jello">o</p>
+            <p class="jello">p</p>
+          </div>
+          <div>
+            <p class="jello">&</p>
+          </div>
+          <div>
+            <p class="jello">c</p>
+            <p class="jello">o</p>
+            <p class="jello">d</p>
+            <p class="jello">e</p>
+          </div>
+          <div>
+            <p class="jello">f</p>
+            <p class="jello">o</p>
+            <p class="jello">r</p>
+          </div>
+          <div>
+            <p class="jello">w</p>
+            <p class="jello">e</p>
+            <p class="jello">b</p>
+            <p class="jello">.</p>
+          </div>
+        </article>
+        <p id="info-para" data-aos="fade-up" data-aos-delay="600">
+          MCA student at Mangalam College of Engineering with expertise in Full Stack Development, Python, and Web
+          Technologies.
+          Passionate about creating innovative solutions and continuous learning.<br />
+          <br />
+          I value clean code, efficient solutions, and collaborative development.
+        </p>
+        <div class="contact-btn-div" data-aos="fade-up" data-aos-delay="800">
+          <a href="mailto:abhiramak963@gmail.com" tabindex="-1">
+            <button class="letsTalkBtn">
+              <p class="letsTalkBtn-text">Let's Talk!</p>
+              <span class="letsTalkBtn-BG"></span>
+            </button></a>
+          <div class="setting-container" id="setting-container">
+            <input type="checkbox" id="switchforsetting" onclick="settingtoggle()" />
+
+            <label for="switchforsetting" class="needtobeinvert" id="labelforsetting" tabindex="0"
+              aria-label="settings for sound and appearance"></label>
+
+            <div class="visualmodetogglebuttoncontainer" id="visualmodetogglebuttoncontainer">
+              <input type="checkbox" id="switchforvisualmode" onclick="visualmode()" />
+              <label for="switchforvisualmode" id="labelforvisualmode" tabindex="0"
+                aria-label="switch appearance"></label>
+            </div>
+
+            <div class="soundtogglebuttoncontainer" id="soundtogglebuttoncontainer">
+              <input type="checkbox" id="switchforsound" onclick="playpause()" />
+              <label for="switchforsound" id="labelforsound" tabindex="0" aria-label="switch sound"
+                class="needtobeinvert"></label>
+            </div>
+          </div>
+          <!-- setting div ends -->
+        </div>
+        <!-- contact-btn-div -->
+      </div>
+
+    </section>
+    <!-- landing page ends here -->
+    <section class="about-section-container" id="about" data-aos="fade-up">
+      <div class="about-section">
+        <div class="section-heading">
+          <h2 class="section-heading-article" tabindex="0" aria-label="About me heading">
+            &#60;/AboutMe&#62;
+          </h2>
+          <p class="sectionHeadingP"></p>
+        </div>
+
+        <div class="info-dp-section">
+          <div class="about-info">
+            <div class="about-header">
+              <h2 class="section-heading-article">About Me</h2>
+            </div>
+
+            <div class="about-content">
+              <p class="about-paragraph">
+                I'm a <span class="highlight">passionate MCA student</span> at Mangalam College of Engineering,
+                Ettumanoor, with an expected graduation in March 2025. I completed my Bachelor of Science in Physics
+                from St. Thomas College, Pala in March 2022.
+              </p>
+
+              <p class="about-paragraph">
+                My technical expertise includes <span class="highlight">Programming Languages</span> like C and Python,
+                <span class="highlight">Web Development</span> with HTML, CSS, and JavaScript, as well as other skills
+                including Shell Scripting, DBMS, SDLC, and Git.
+              </p>
+
+              <p class="about-paragraph">
+                I'm fluent in <span class="highlight">Malayalam</span> (Native), <span class="highlight">English</span>,
+                and have intermediate proficiency in Hindi. Based in Pala, Kerala, I bring enthusiasm and dedication to
+                every project I undertake.
+              </p>
+
+              <p class="about-paragraph">
+                I'm currently working as a <span class="highlight">Full-Stack Python Developer</span> at <span
+                  class="highlight">Quest Innovative Solutions</span>, focusing on Django development and Generative AI
+                integration. Previously, I completed an internship as a <span class="highlight">PHP Developer</span> at 
+                <span class="highlight">HASHCOVET</span>, where I gained experience in web development, mobile applications, 
+                and digital marketing.
+              </p>
+            </div>
+
+            <button class="resume-btn" id="resume-btn" onclick="openURL()">
+              <div class="sign">
+                <svg viewBox="0 0 640 512">
+                  <path
+                    d="M144 480C64.5 480 0 415.5 0 336c0-62.8 40.2-116.2 96.2-135.9c-.1-2.7-.2-5.4-.2-8.1c0-88.4 71.6-160 160-160c59.3 0 111 32.2 138.7 80.2C409.9 102 428.3 96 448 96c53 0 96 43 96 96c0 12.2-2.3 23.8-6.4 34.6C596 238.4 640 290.1 640 352c0 70.7-57.3 128-128 128H144zm79-167l80 80c9.4 9.4 24.6 9.4 33.9 0l80-80c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-39 39V184c0-13.3-10.7-24-24-24s-24 10.7-24 24V318.1l-39-39c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9z" />
+                </svg>
+              </div>
+              <span>Download Resume</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- about section ends  -->
+
+    <section class="internship-section-container" id="internships">
+      <div class="internship-section">
+        <div class="section-heading" data-aos="fade-up">
+          <h2 class="section-heading-article" tabindex="0" aria-label="internships heading">
+            &#60;/Internships&#62;
+          </h2>
+          <p class="sectionHeadingP"></p>
+        </div>
+
+        <div class="internship-content">
+          <!-- Current Internship -->
+          <div class="internship-card current-internship" data-aos="fade-up">
+            <div class="company-logo">
+              <img src="quest.jpeg" alt="Quest Innovative Solutions logo" class="company-logo-img">
+            </div>
+            <div class="internship-details">
+              <h4>Full-Stack Python Developer</h4>
+              <h5>Quest Innovative Solutions Pvt Ltd</h5>
+              <p class="company-tagline">Innovating Tomorrow's Solutions</p>
+              <p class="duration">July 2024 - January 2025 (Current)</p>
+              <div class="description">
+                <p>Currently working on cutting-edge projects combining Django development with Generative AI:</p>
+                <ul>
+                  <li>Developing full-stack web applications using Django framework</li>
+                  <li>Integrating Generative AI models and APIs into web applications</li>
+                  <li>Building responsive frontend interfaces with modern JavaScript</li>
+                  <li>Implementing AI-powered features and automation solutions</li>
+                  <li>Collaborating on innovative projects in AI and machine learning</li>
+                  <li>Working with databases, APIs, and cloud deployment</li>
+                </ul>
+              </div>
+              <div class="tags">
+                <span>Python</span>
+                <span>Django</span>
+                <span>Generative AI</span>
+                <span>Full-Stack</span>
+                <span>Machine Learning</span>
+                <span>JavaScript</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Previous Internship -->
+          <div class="internship-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="company-logo">
+              <img src="src/png/hashcovet.jpg" alt="HASHCOVET logo" class="company-logo-img">
+            </div>
+            <div class="internship-details">
+              <h4>PHP Developer</h4>
+              <h5>HASHCOVET</h5>
+              <p class="company-tagline">Innovate Your Desire</p>
+              <p class="duration">June 2023 - August 2023</p>
+              <div class="description">
+                <p>Gained comprehensive experience in web development and digital solutions:</p>
+                <ul>
+                  <li>Developed dynamic web applications using PHP and MySQL</li>
+                  <li>Created responsive user interfaces with HTML, CSS, and JavaScript</li>
+                  <li>Collaborated on mobile application development projects</li>
+                  <li>Contributed to graphic design and digital marketing initiatives</li>
+                  <li>Implemented best practices in software development lifecycle</li>
+                </ul>
+              </div>
+              <div class="tags">
+                <span>PHP</span>
+                <span>MySQL</span>
+                <span>JavaScript</span>
+                <span>Web Development</span>
+                <span>Mobile Apps</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <style>
+        .internship-section-container {
+          min-height: 60vh;
+          width: 100%;
+          padding: 6rem 0;
+          background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1));
+        }
+
+        .internship-section {
+          width: 90%;
+          margin: 0 auto;
+          max-width: 1000px;
+        }
+
+        .internship-content {
+          padding: 3rem 0;
+        }
+
+        .internship-card {
+          display: flex;
+          background: rgba(20, 20, 30, 0.95);
+          border-radius: 15px;
+          padding: 3rem;
+          margin-bottom: 2rem;
+          border: 1px solid rgba(121, 75, 196, 0.3);
+          box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+          backdrop-filter: blur(10px);
+          transition: transform 0.3s ease, box-shadow 0.3s ease;
+          max-width: 1000px;
+          margin-left: auto;
+          margin-right: auto;
+        }
+
+        .internship-card:hover {
+          transform: translateY(-5px);
+          box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .company-logo {
+          width: 120px;
+          height: 120px;
+          min-width: 120px;
+          background: transparent;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-right: 3rem;
+          border: none;
+          overflow: hidden;
+        }
+
+        .company-logo-img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+          border-radius: 50%;
+        }
+
+        .internship-details {
+          flex: 1;
+        }
+
+        .internship-details h4 {
+          color: #fff;
+          font-size: 1.5rem;
+          margin: 0;
+          margin-bottom: 0.5rem;
+          font-family: 'Space Grotesk', sans-serif;
+          font-weight: 600;
+          letter-spacing: -0.02em;
+        }
+
+        .internship-details h5 {
+          color: #a67fde;
+          font-size: 1.2rem;
+          margin: 0;
+          margin-bottom: 0.5rem;
+          font-family: 'DM Sans', sans-serif;
+          font-weight: 600;
+        }
+
+        .company-tagline {
+          color: rgba(255, 255, 255, 0.8);
+          font-size: 1rem;
+          font-style: italic;
+          margin: 0;
+          margin-bottom: 0.5rem;
+          font-family: 'DM Sans', sans-serif;
+        }
+
+        .internship-details .duration {
+          color: #888;
+          font-size: 1rem;
+          margin-bottom: 1.5rem;
+          font-family: 'DM Sans', sans-serif;
+          font-weight: 400;
+        }
+
+        .internship-details .description {
+          color: rgba(255, 255, 255, 0.9);
+          font-size: 1.1rem;
+          line-height: 1.8;
+          margin-bottom: 2rem;
+          font-family: 'DM Sans', sans-serif;
+        }
+
+        .internship-details .description ul {
+          padding-left: 1.2rem;
+          margin: 0;
+        }
+
+        .internship-details .description li {
+          margin-bottom: 0.5rem;
+        }
+
+        .internship-details .tags {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 0.8rem;
+        }
+
+        .internship-details .tags span {
+          background: rgba(121, 75, 196, 0.2);
+          color: rgba(255, 255, 255, 0.9);
+          padding: 0.5rem 1.2rem;
+          border-radius: 20px;
+          font-size: 0.9rem;
+          font-family: 'Space Grotesk', sans-serif;
+          font-weight: 500;
+          border: 1px solid rgba(121, 75, 196, 0.4);
+          letter-spacing: 0.02em;
+        }
+
+        /* Current internship highlighting */
+        .current-internship {
+          border: 2px solid rgba(100, 255, 218, 0.5);
+          background: rgba(20, 20, 30, 0.98);
+          position: relative;
+        }
+
+        .current-internship::before {
+          content: "CURRENT";
+          position: absolute;
+          top: -12px;
+          right: 20px;
+          background: linear-gradient(45deg, #64ffda, #00dfd8);
+          color: #000;
+          padding: 4px 12px;
+          border-radius: 12px;
+          font-size: 0.8rem;
+          font-weight: 600;
+          font-family: 'Space Grotesk', sans-serif;
+          letter-spacing: 0.5px;
+        }
+
+        .current-internship .internship-details .duration {
+          color: #64ffda;
+          font-weight: 600;
+        }
+
+        /* Quest logo placeholder styling */
+        .quest-logo-placeholder {
+          width: 100%;
+          height: 100%;
+          background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 3rem;
+          font-weight: 700;
+          color: white;
+          font-family: 'Space Grotesk', sans-serif;
+          text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+        }
+
+        @media (max-width: 768px) {
+          .internship-card {
+            flex-direction: column;
+            padding: 2rem;
+          }
+
+          .company-logo {
+            margin-right: 0;
+            margin-bottom: 2rem;
+            width: 100px;
+            height: 100px;
+            min-width: 100px;
+          }
+
+          .internship-details .tags {
+            gap: 0.8rem;
+            margin-top: 1.5rem;
+          }
+
+          .internship-details .description ul {
+            padding-left: 1rem;
+          }
+          
+          .internship-details h4 {
+            font-size: 1.5rem;
+          }
+          
+          .internship-details h5 {
+            font-size: 1.2rem;
+          }
+          
+          .company-tagline {
+            font-size: 1rem;
+          }
+          
+          .internship-details .description {
+            font-size: 1rem;
+          }
+        }
+      </style>
+    </section>
+    <!-- internship section ends -->
+
+    <section class="skills-section-container" id="skills">
+      <div class="skills-section">
+        <div class="section-heading" data-aos="fade-up">
+          <h2 class="section-heading-article" tabindex="0" aria-label="skills heading">
+            &#60;/Skills&#62;
+          </h2>
+          <p class="sectionHeadingP"></p>
+        </div>
+
+        <div class="frontend-dev-section">
+          <h3 class="frontend-dev-heading" data-aos="fade-up" tabindex="0">
+            Technical Skills
+          </h3>
+          <ul class="tech-stack-wrapper">
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/png/htmllogo.png" alt="Html skill" class="tech-stack-logo" />
+              <span class="tooltip">HTML</span>
+            </li>
+
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/png/csslogo.png" alt="css skill" class="tech-stack-logo" />
+              <span class="tooltip">CSS</span>
+            </li>
+
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/png/jslogo.png" alt="js skill" class="tech-stack-logo" />
+              <span class="tooltip">JS</span>
+            </li>
+
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/png/clogo.png" alt="c language skill" class="tech-stack-logo" />
+              <span class="tooltip">C</span>
+            </li>
+
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+                alt="python skill" class="tech-stack-logo" />
+              <span class="tooltip">PYTHON</span>
+            </li>
+
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/png/githublogo.png" alt="github skill" class="tech-stack-logo needtobeinvert" />
+              <span class="tooltip">GITHUB</span>
+            </li>
+
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/png/gitlogo.png" alt="git skill" class="tech-stack-logo" />
+              <span class="tooltip">GIT</span>
+            </li>
+          </ul>
+          <style>
+            .project-cards {
+              display: grid;
+              grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+              gap: 2rem;
+              padding: 2rem 0;
+            }
+
+            .project-card {
+              background: rgba(255, 255, 255, 0.05);
+              border-radius: 10px;
+              padding: 1.5rem;
+              transition: transform 0.3s ease;
+            }
+
+            .project-card:hover {
+              transform: translateY(-5px);
+              background: rgba(255, 255, 255, 0.1);
+            }
+
+            .project-title {
+              color: #fff;
+              font-size: 1.2rem;
+              margin-bottom: 0.5rem;
+            }
+
+            .project-date {
+              color: #888;
+              font-size: 0.9rem;
+              margin-bottom: 1rem;
+            }
+
+            .project-description {
+              color: #ccc;
+              font-size: 1rem;
+              line-height: 1.5;
+            }
+
+            .certifications-heading {
+              margin-top: 3rem;
+            }
+
+            .certifications-grid {
+              display: grid;
+              grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+              gap: 1.5rem;
+              padding: 2rem 0;
+            }
+
+            .certification-card {
+              background: rgba(255, 255, 255, 0.05);
+              border-radius: 10px;
+              padding: 1.2rem;
+              transition: transform 0.3s ease;
+            }
+
+            .certification-card:hover {
+              transform: translateY(-5px);
+              background: rgba(255, 255, 255, 0.1);
+            }
+
+            .certification-title {
+              color: #fff;
+              font-size: 1rem;
+              line-height: 1.4;
+              margin: 0;
+            }
+
+            @media (max-width: 768px) {
+
+              .project-cards,
+              .certifications-grid {
+                grid-template-columns: 1fr;
+              }
+            }
+          </style>
+        </div>
+      </div>
+    </section>
+    <!-- skills section ends -->
+
+    <section class="projects-section-container" id="projects">
+      <div class="projects-section">
+        <div class="section-heading" data-aos="fade-up">
+          <h2 class="section-heading-article" tabindex="0" aria-label="projects heading">
+            &#60;/Projects&#62;
+          </h2>
+          <p class="sectionHeadingP"></p>
+        </div>
+
+        <div class="projects-showcase">
+          <div class="project-card" data-aos="fade-up">
+            <div class="project-image">
+              <div class="project-overlay">
+                <div class="tech-stack">
+                  <span>Python</span>
+                  <span>Flask</span>
+                  <span>SQL</span>
+                </div>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-header">
+                <h3>Full Stack Development Using Python</h3>
+                <div class="project-links">
+                  <a href="#" class="project-link" aria-label="View Project">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                      <polyline points="15 3 21 3 21 9"></polyline>
+                      <line x1="10" y1="14" x2="21" y2="3"></line>
+                    </svg>
+                  </a>
+                  <a href="#" class="project-link" aria-label="View Code">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path
+                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                      </path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <p class="project-duration">Feb 2024 - Mar 2024</p>
+              <p class="project-description">A web application developed using Python and Flask framework. Features
+                include user authentication, database integration, and RESTful API endpoints.</p>
+            </div>
+          </div>
+
+          <div class="project-card" data-aos="fade-up">
+            <div class="project-image">
+              <div class="project-overlay">
+                <div class="tech-stack">
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>JavaScript</span>
+                </div>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-header">
+                <h3>Todo List Web Application</h3>
+                <div class="project-links">
+                  <a href="#" class="project-link" aria-label="View Project">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                      <polyline points="15 3 21 3 21 9"></polyline>
+                      <line x1="10" y1="14" x2="21" y2="3"></line>
+                    </svg>
+                  </a>
+                  <a href="#" class="project-link" aria-label="View Code">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path
+                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                      </path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <p class="project-duration">Nov 2023 - Jan 2024</p>
+              <p class="project-description">Interactive todo list application with features for task creation, editing,
+                and deletion. Includes local storage for data persistence.</p>
+            </div>
+          </div>
+
+          <div class="project-card" data-aos="fade-up">
+            <div class="project-image">
+              <div class="project-overlay">
+                <div class="tech-stack">
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>JavaScript</span>
+                </div>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-header">
+                <h3>Wedding Company Website Frontend</h3>
+                <div class="project-links">
+                  <a href="#" class="project-link" aria-label="View Project">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                      <polyline points="15 3 21 3 21 9"></polyline>
+                      <line x1="10" y1="14" x2="21" y2="3"></line>
+                    </svg>
+                  </a>
+                  <a href="#" class="project-link" aria-label="View Code">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path
+                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                      </path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <p class="project-duration">Sep 2023 - Nov 2023</p>
+              <p class="project-description">Modern and responsive wedding company website with elegant design and
+                smooth animations.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="view-all-projects-container" data-aos="fade-up">
+          <a href="projects.html" class="cta">
+            <span>More Projects</span>
+            <svg width="15px" height="10px" viewBox="0 0 13 10">
+              <path d="M1,5 L11,5"></path>
+              <polyline points="8 1 12 5 8 9"></polyline>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="certifications-section-container" id="certifications">
+      <div class="certifications-section">
+        <div class="section-heading" data-aos="fade-up">
+          <h2 class="section-heading-article" tabindex="0" aria-label="certifications heading">
+            &#60;/Certifications&#62;
+          </h2>
+          <p class="sectionHeadingP"></p>
+        </div>
+
+        <div class="certifications-timeline">
+          <div class="certification-item" data-aos="fade-right">
+            <div class="certification-icon">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+                alt="Python certification" />
+            </div>
+            <div class="certification-content">
+              <h4>Full Stack Development Using Python</h4>
+              <p class="certification-details">Comprehensive training in Python web development and full-stack
+                applications.</p>
+              <div class="certification-meta">
+                <span class="certification-date">2024</span>
+                <span class="certification-badge">Professional</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="certification-item" data-aos="fade-left">
+            <div class="certification-icon">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg"
+                alt="Git certification" />
+            </div>
+            <div class="certification-content">
+              <h4>Git and GitHub: A Comprehensive Guide</h4>
+              <p class="certification-details">In-depth training in version control and collaborative development.</p>
+              <div class="certification-meta">
+                <span class="certification-date">2023</span>
+                <span class="certification-badge">Advanced</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="certification-item" data-aos="fade-right">
+            <div class="certification-icon">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg"
+                alt="Cybersecurity certification" />
+            </div>
+            <div class="certification-content">
+              <h4>CYBERSAFE Workshop - Asthra 8.0</h4>
+              <p class="certification-details">Training in cybersecurity best practices and secure development.</p>
+              <div class="certification-meta">
+                <span class="certification-date">2023</span>
+                <span class="certification-badge">Specialized</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <style>
+        .certifications-section-container {
+          min-height: 100vh;
+          width: 100%;
+          padding: 6rem 0;
+          background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1));
+        }
+
+        .certifications-section {
+          width: 90%;
+          margin: 0 auto;
+          max-width: 1000px;
+        }
+
+        .certifications-timeline {
+          position: relative;
+          padding: 3rem 0;
+        }
+
+        .certifications-timeline::before {
+          content: '';
+          position: absolute;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 2px;
+          height: 100%;
+          background: linear-gradient(to bottom,
+              rgba(255, 255, 255, 0.1),
+              rgba(255, 255, 255, 0.3),
+              rgba(255, 255, 255, 0.1));
+        }
+
+        .certification-item {
+          display: flex;
+          align-items: center;
+          margin-bottom: 4rem;
+          position: relative;
+          width: 100%;
+        }
+
+        .certification-item:nth-child(odd) {
+          padding-right: 50%;
+        }
+
+        .certification-item:nth-child(even) {
+          padding-left: 50%;
+          flex-direction: row-reverse;
+        }
+
+        .certification-icon {
+          width: 60px;
+          height: 60px;
+          background: rgba(255, 255, 255, 0.1);
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin: 0 2rem;
+          position: relative;
+          z-index: 1;
+          box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+        }
+
+        .certification-icon img {
+          width: 35px;
+          height: 35px;
+          filter: brightness(0.9);
+        }
+
+        .certification-content {
+          background: rgba(255, 255, 255, 0.05);
+          padding: 1.5rem;
+          border-radius: 15px;
+          backdrop-filter: blur(10px);
+          border: 1px solid rgba(255, 255, 255, 0.1);
+          flex: 1;
+          position: relative;
+        }
+
+        .certification-content::before {
+          content: '';
+          position: absolute;
+          width: 20px;
+          height: 20px;
+          background: inherit;
+          top: 50%;
+          transform: translateY(-50%) rotate(45deg);
+        }
+
+        .certification-item:nth-child(odd) .certification-content::before {
+          right: -10px;
+        }
+
+        .certification-item:nth-child(even) .certification-content::before {
+          left: -10px;
+        }
+
+        .certification-content h4 {
+          color: #fff;
+          font-size: 1.2rem;
+          margin-bottom: 0.5rem;
+        }
+
+        .certification-details {
+          color: #ccc;
+          font-size: 0.95rem;
+          line-height: 1.5;
+          margin-bottom: 1rem;
+        }
+
+        .certification-meta {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-top: 1rem;
+          padding-top: 1rem;
+          border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .certification-date {
+          color: #888;
+          font-size: 0.9rem;
+        }
+
+        .certification-badge {
+          background: rgba(255, 255, 255, 0.1);
+          padding: 0.3rem 0.8rem;
+          border-radius: 20px;
+          font-size: 0.8rem;
+          color: #fff;
+        }
+
+        @media (max-width: 768px) {
+          .certifications-timeline::before {
+            left: 30px;
+          }
+
+          .certification-item {
+            padding-left: 80px !important;
+            padding-right: 0 !important;
+          }
+
+          .certification-item:nth-child(even) {
+            flex-direction: row;
+          }
+
+          .certification-icon {
+            margin: 0;
+            position: absolute;
+            left: 0;
+          }
+
+          .certification-content::before {
+            display: none;
+          }
+        }
+      </style>
+    </section>
+  </main>
+  <!-- main ends here -->
+
+  <footer id="footer">
+    <button class="fas" id="backtotopbutton" onclick="scrolltoTopfunction()">
+      <article aria-label="Back to top">&#8592;BACK TO TOP</article>
+    </button>
+    <div class="footer-background">
+      <div class="footer-blob"></div>
+    </div>
+    <div class="footer-foreground">
+      <div class="footercontainer">
+        <div class="two-words">
+          <article tabindex="0" aria-label="Learning, Living, and Leveling Up, my quote">
+            "Learning, Living, and Leveling Up."
+          </article>
+        </div>
+        <div class="social-media-container">
+          <div class="getintouch-heading">
+            <article>GetinTouch();</article>
+          </div>
+          <div class="logos">
+            <a href="https://www.instagram.com/abhi9632024143/" target="_blank" tabindex="0"
+              aria-label="My instagram"><svg viewBox="0 0 448 512" class="SocialHandle">
+                <path
+                  d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+              </svg></a>
+
+            <a href="https://www.linkedin.com/in/abhiram-a-k-16208a174/" target="_blank" aria-label="My LinkedIn"><svg
+                class="SocialHandle" viewBox="0 0 448 512">
+                <path
+                  d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.68V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94.03 0 111.28 61.9 111.28 142.3V448z" />
+              </svg></a>
+
+            <a href="https://github.com/abhi963007" target="_blank" aria-label="My github"><svg viewBox="0 0 496 512"
+                class="SocialHandle">
+                <path
+                  d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" />
+              </svg></a>
+
+            <a href="abhiramak963@gmail.com" target="_blank" aria-label="My G mail"><svg id="GmailLogo"
+                viewBox="0 0 512 512">
+                <path
+                  d="M64 112c-8.8 0-16 7.2-16 16v22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1V128c0-8.8-7.2-16-16-16H64zM48 212.2V384c0 8.8 7.2 16 16 16H448c8.8 0 16-7.2 16-16V212.2L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64H448c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128z" />
+              </svg></a>
+          </div>
+        </div>
+        <div class="footer-avatar-container">
+          <img src="src/png/footer-avatar-vinod.png" alt="animation-head" class="footer-avatar-img"
+            id="footer-wala-avatar" />
+          <div class="footer-avatar-face">
+            <div class="footer-avatar-eye footer-left-eye">
+              <div class="footer-pupil"></div>
+            </div>
+            <div class="footer-avatar-eye footer-right-eye">
+              <div class="footer-pupil"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- footer ends here -->
+
+  <script src="main.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+  <script>
+    function openURL() {
+      var url = "src/pdf/Abhiram_A_K_CV.pdf";
+
+      window.open(url, "_blank");
+    }
+  </script>
+
+  <script>
+    const cursorInner = document.getElementById("cursor-inner");
+    const cursorOuter = document.getElementById("cursor-outer");
+    const links = document.querySelectorAll("a,label,button");
+
+    document.addEventListener("mousemove", function (e) {
+      const posX = e.clientX;
+      const posY = e.clientY;
+
+      cursorInner.style.left = `${posX}px`;
+      cursorInner.style.top = `${posY}px`;
+
+      // cursorOuter.style.left = `${posX}px`;
+      // cursorOuter.style.top = `${posY}px`;
+
+      cursorOuter.animate(
+        {
+          left: `${posX}px`,
+          top: `${posY}px`,
+        },
+        { duration: 500, fill: "forwards" }
+      );
+
+      links.forEach((link) => {
+        link.addEventListener("mouseenter", () => {
+          cursorInner.classList.add("hover");
+          cursorOuter.classList.add("hover");
+        });
+        link.addEventListener("mouseleave", () => {
+          cursorInner.classList.remove("hover");
+          cursorOuter.classList.remove("hover");
+        });
+      });
+    });
+  </script>
+</body>
+
+</html>

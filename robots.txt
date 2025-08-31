@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://abhi963007.github.io/personal-portfolio/sitemap.xml
