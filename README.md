@@ -13,9 +13,6 @@ A modern, responsive personal portfolio website showcasing my skills, projects, 
   <a href="https://abhi963007.github.io/personal-portfolio/" target="_blank"><strong>✨ View Live Demo</strong></a>
 </p>
 
-<p align="center">
-  <img src="src/png/Preview-card-min.png" alt="Portfolio Preview" width="100%"/>
-</p>
 
 ## 📋 Overview
 
